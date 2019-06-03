@@ -13,3 +13,10 @@ pipeline:
     commands:
       - go build -ldflags "-X main.Version=${DRONE_TAG}" -o dea
       - go test -v
+  release:
+    image: golang:latest
+    secrets: [github_token]
+    commands:
+      curl -sL https://git.io/goreleaser | bash
+    when:
+      event: tag
