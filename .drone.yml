@@ -12,7 +12,7 @@ pipeline:
     commands:
       - go vet
       - go test -v -cover
-      go clean
+      - go clean
   build:
     image: golang:latest
     commands:
