@@ -2,7 +2,6 @@ pipeline:
   clone:
     image: plugins/git
     tags: true
-
   test:
     image: golang:1.10
     commands:
