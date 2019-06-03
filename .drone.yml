@@ -13,12 +13,6 @@ pipeline:
       - go vet
       - go test -v -cover
       - go clean
-  build:
-    image: golang:latest
-    commands:
-      - go build -ldflags "-X main.Version=${DRONE_TAG}" -o skm
-      - go test -v
-      - go clean
   release:
     image: golang:latest
     secrets: [github_token]
