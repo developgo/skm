@@ -17,7 +17,7 @@ var (
 ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝
 
 SKM V%s
-https://github.com/TimothyYe/skm
+https://github.com/developgo/skm
 
 `
 )

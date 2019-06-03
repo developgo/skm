@@ -9,7 +9,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/TimothyYe/skm"
+	"github.com/developgo/skm"
 	"github.com/fatih/color"
 	"github.com/manifoldco/promptui"
 	cli "gopkg.in/urfave/cli.v1"

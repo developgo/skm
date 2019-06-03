@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/TimothyYe/skm"
+	"github.com/developgo/skm"
 	cli "gopkg.in/urfave/cli.v1"
 )
 

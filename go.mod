@@ -1,4 +1,4 @@
-module github.com/TimothyYe/skm
+module github.com/developgo/skm
 
 require (
 	github.com/chzyer/logex v1.1.10 // indirect

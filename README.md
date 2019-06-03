@@ -1,21 +1,21 @@
-![](https://raw.githubusercontent.com/TimothyYe/skm/master/snapshots/skm.png)
+![](https://raw.githubusercontent.com/developgo/skm/master/snapshots/skm.png)
 
 [![MIT licensed][5]][6] [![LICENSE](https://img.shields.io/badge/license-NPL%20(The%20996%20Prohibited%20License)-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE) [![Build Status][1]][2] [![Go Report Card][7]][8] [![GoCover.io][11]][12] [![GoDoc][9]][10]
 
-[1]: https://travis-ci.org/TimothyYe/skm.svg?branch=master
-[2]: https://travis-ci.org/TimothyYe/skm
+[1]: https://travis-ci.org/developgo/skm.svg?branch=master
+[2]: https://travis-ci.org/developgo/skm
 [5]: https://img.shields.io/dub/l/vibe-d.svg
 [6]: LICENSE
-[7]: https://goreportcard.com/badge/github.com/timothyye/skm
-[8]: https://goreportcard.com/report/github.com/timothyye/skm
-[9]: https://godoc.org/github.com/TimothyYe/skm?status.svg
-[10]: https://godoc.org/github.com/TimothyYe/skm
+[7]: https://goreportcard.com/badge/github.com/developgo/skm
+[8]: https://goreportcard.com/report/github.com/developgo/skm
+[9]: https://godoc.org/github.com/developgo/skm?status.svg
+[10]: https://godoc.org/github.com/developgo/skm
 [11]: https://img.shields.io/badge/gocover.io-81.8%25-green.svg
-[12]: https://gocover.io/github.com/timothyye/skm
+[12]: https://gocover.io/github.com/developgo/skm
 
 SKM is a simple and powerful SSH Keys Manager. It helps you to manage your multiple SSH keys easily!
 
-![](https://github.com/TimothyYe/skm/blob/master/snapshots/demo.gif?raw=true)
+![](https://github.com/developgo/skm/blob/master/snapshots/demo.gif?raw=true)
 
 ## Features
 
@@ -33,26 +33,26 @@ SKM is a simple and powerful SSH Keys Manager. It helps you to manage your multi
 #### Homebrew
 
 ```bash
-brew tap timothyye/tap
-brew install timothyye/tap/skm
+brew tap developgo/tap
+brew install developgo/tap/skm
 ```
 
 #### Using Go
 
 ```bash
-go get github.com/TimothyYe/skm/cmd/skm
+go get github.com/developgo/skm/cmd/skm
 ```
 
 #### Manual Installation
 
-Download it from [releases](https://github.com/TimothyYe/skm/releases) and extact it to /usr/bin or your PATH directory.
+Download it from [releases](https://github.com/developgo/skm/releases) and extact it to /usr/bin or your PATH directory.
 
 ## Usage
 ```bash
 % skm
 
 SKM V0.7
-https://github.com/TimothyYe/skm
+https://github.com/developgo/skm
 
 NAME:
    SKM - Manage your multiple SSH keys easily
@@ -135,7 +135,7 @@ Now using SSH key: dev
 
 You can just type ```skm use```, then a prompt UI will help you to choose the right SSH key:
 
-![](https://github.com/TimothyYe/skm/blob/master/snapshots/prompt.gif?raw=true)
+![](https://github.com/developgo/skm/blob/master/snapshots/prompt.gif?raw=true)
 
 ### Display public key
 
@@ -315,5 +315,5 @@ SKM will call this hook file and change git global settings for you!
 
 ## Licence
 
-[MIT License](https://github.com/TimothyYe/skm/blob/master/LICENSE)  
+[MIT License](https://github.com/developgo/skm/blob/master/LICENSE)  
 [996ICU License](https://github.com/lxlxw/996.TSC/blob/master/LICENSE)
