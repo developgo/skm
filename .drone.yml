@@ -7,15 +7,21 @@ pipeline:
     image: docker:git
     commands:
       - git fetch --tags
-
+  test:
+    image: golang:latest
+    commands:
+      - go vet
+      - go test -v -cover
+  build:
+    image: golang:latest
+    commands:
+      - go build -ldflags "-X main.Version=${DRONE_TAG}" -o dea
+      - go test -v
   release:
-    when:
-      event:
-        - tag
     image: golang:latest
     secrets: [github_token]
     commands:
-      - export GO111MODULE="on"
-      - go mod download
-      - curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | sh -s -- -b $(go env GOPATH)/bin v1.15.0
-      - golangci-lint run --fast
+      - cd cmd/skm 
+      - curl -sL https://git.io/goreleaser | bash
+    when:
+      event: tag
